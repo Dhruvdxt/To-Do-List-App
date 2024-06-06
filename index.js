@@ -3,4 +3,4 @@ const db = require('./Config/MongoDB');
 const user_model = require('./Models/User');
 const port = 4000;
 
-app.listen(process.env.PORT || port, '0.0.0.0', () => console.log(`Server is Listening on Port http://localhost:${port}`));
+app.listen(port, '0.0.0.0', () => console.log(`Server is Listening on Port http://localhost:${port}`));
