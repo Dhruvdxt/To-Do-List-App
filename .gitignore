@@ -1,0 +1,5 @@
+# Node.js
+node_backend/node_modules/
+
+node_modules
+.env
