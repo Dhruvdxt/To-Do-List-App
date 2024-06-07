@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+const localhostServer = "mongodb://127.0.0.1:27017/To-Do";
 
 const new_connection = mongoose
-    .connect(process.env.MongoDBURI, {
+    .connect(process.env.MongoDBURI || localhostServer, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         ssl: true,
