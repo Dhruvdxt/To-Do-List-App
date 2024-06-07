@@ -9,8 +9,8 @@ if (!mongoDBURI) {
 
 const new_connection = mongoose
     .connect(mongoDBURI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
         ssl: true,
         tlsInsecure: true 
     })
