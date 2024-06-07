@@ -1,5 +1,11 @@
 const mongoose = require("mongoose");
 const localhostServer = "mongodb://127.0.0.1:27017/To-Do_App";
+const mongoDBURI = process.env.MongoDBURI;
+
+if (!mongoDBURI) {
+    console.error('MongoDBURI environment variable is not set.');
+    process.exit(1); // Exit the process if the URI is not set
+}
 
 const new_connection = mongoose
     .connect(process.env.MongoDBURI, {
