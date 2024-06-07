@@ -8,7 +8,7 @@ if (!mongoDBURI) {
 }
 
 const new_connection = mongoose
-    .connect(process.env.MongoDBURI, {
+    .connect(mongoDBURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         ssl: true,
